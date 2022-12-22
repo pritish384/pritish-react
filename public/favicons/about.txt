@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Stoke
+- Font Author: Copyright (c) 2012, Sorkin Type Co (www.sorkintype.com), with Reserved Font Name 'Stoke'
+- Font Source: http://fonts.gstatic.com/s/stoke/v22/z7NadRb7aTMfKONpfihK1YTV.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
