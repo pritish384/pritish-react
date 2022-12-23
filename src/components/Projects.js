@@ -16,26 +16,35 @@ export const Projects = () => {
       title: "Simon Game",
       description: "An Amazing Game 2D",
       imgUrl: projImg1,
+      projLink:"https://kanav-chauhan.github.io/Simon-Game/",
     },
     {
       title: "Dice Game",
       description: "A 2-P Dice Game ",
       imgUrl: projImg2,
+      projLink:"https://kanav-chauhan.github.io/Dice-Game/",
+
     },
     {
       title: "A Drum Kit",
       description: "Press Key Drum Sound",
       imgUrl: projImg3,
+      projLink:"https://kanav-chauhan.github.io/Drum-Kit/",
+
     },
     {
       title: "Old Portfolio",
       description: "Basic Portfolio by HTML,CSS,JS",
       imgUrl: projImg4,
+      projLink:"https://kanav-chauhan.github.io/Portfolio/",
+
     },
     {
       title: "SRM Notes",
       description: "Website to Aid College Students",
       imgUrl: projImg5,
+      projLink:"https://srmnotes.live",
+
     },
     // {
     //   title: "Business Startup",
