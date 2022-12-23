@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
+import { HashLink } from 'react-router-hash-link';
 import TrackVisibility from 'react-on-screen';
 
 export const Banner = () => {
@@ -59,7 +60,7 @@ export const Banner = () => {
                 <h1>{`Hi! I'm Kanav Chauhan`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'></span></h1>
                 <h2><span className="wrap">&nbsp;{text}</span></h2>
                   <p>I am an enthusiastic Developer and strongly Dedicated to mastering fresh concepts of Development. Presently accomplishing my Bachelor's Degree in Computer Science with a Specialization in Artificial Intelligence and Machine Learning at SRM University of Science and Technology, Chennai.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+               <a href="#connect" style={{textDecoration: 'none'}}>   <button  onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button></a>
               </div>}
             </TrackVisibility>
           </Col>

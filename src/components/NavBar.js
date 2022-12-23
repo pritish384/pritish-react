@@ -6,7 +6,8 @@ import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 import navIcon4 from '../assets/img/nav-icon4.svg';
 import navIcon5 from '../assets/img/nav-icon5.svg';
-import { HashLink } from 'react-router-hash-link';
+
+import resume from '../assets/img/resume.pdf';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
@@ -58,9 +59,9 @@ export const NavBar = () => {
                 <a href="https://twitter.com/kanavchauhan001"target="_blank"><img src={navIcon4} alt="" /></a>
                 <a href="https://github.com/Kanav-Chauhan"target="_blank"><img src={navIcon5} alt="" /></a>
               </div>
-              <HashLink to='#connect'>
-                <button className="vvd"><span>Let’s Connect</span></button>
-              </HashLink>
+             <a href={resume} download="Kanav's Resume" target="_blank"> 
+                <button className="vvd"><span>Download Resume</span></button>
+              </a>
             </span>
           </Navbar.Collapse>
         </Container>
