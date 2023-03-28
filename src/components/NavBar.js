@@ -9,7 +9,8 @@ import navIcon5 from '../assets/img/nav-icon5.svg';
 import React from 'react';
 
 
-import resume from '../assets/img/resume.pdf';
+// import resume from '../assets/img/resume.pdf';
+
 import {
   BrowserRouter as Router
 } from "react-router-dom";
