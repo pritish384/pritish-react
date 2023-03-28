@@ -5,6 +5,8 @@ import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import { HashLink } from 'react-router-hash-link';
 import TrackVisibility from 'react-on-screen';
+import React from 'react';
+
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -12,8 +14,8 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "A Web Developer", "An Ethical Hacker", "A Data Scientist" ];
-  const period = 2000;
+  const toRotate = [ "A Full Stack Developer", "Student", "JEE Aspirant" ];
+  const period = 200;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -56,11 +58,11 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Kanav Chauhan`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'></span></h1>
+                <span className="tagline">Welcome</span>
+                <h1>{`Hi! I'm Pritish Purav`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'></span></h1>
                 <h2><span className="wrap">&nbsp;{text}</span></h2>
-                  <p>I am an enthusiastic Developer and strongly Dedicated to mastering fresh concepts of Development. Presently accomplishing my Bachelor's Degree in Computer Science with a Specialization in Artificial Intelligence and Machine Learning at SRM University of Science and Technology, Chennai.</p>
-               <a href="#connect" style={{textDecoration: 'none'}}>   <button  onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button></a>
+                  <p>I am an enthusiastic Developer and strongly Dedicated to mastering fresh concepts of Development. Presently I am in 11th Class and working hard to crack JEE and Get into a decent IIT with CSE Branch.</p>
+               <a href="#connect" style={{textDecoration: 'none'}}>   <button  onClick={() => console.log('connect')}>Contact Me<ArrowRightCircle size={25} /></button></a>
               </div>}
             </TrackVisibility>
           </Col>

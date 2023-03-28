@@ -6,6 +6,8 @@ import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
+import React from 'react';
+
 
 export const Skills = () => {
   const responsive = {
@@ -36,18 +38,18 @@ export const Skills = () => {
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
                         <p>Learning is a Great process of becoming more Expert with the experience that come as a reward, my passion of learning about the latest and the in-demand Technology made me master in these skills.<br></br></p>
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                        <Carousel responsive={responsive} infinite={false} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={meter1} alt="Image" />
-                                <h5>Web Development - Beginner</h5>
+                                <h5>Web Development</h5>
                             </div>
                             <div className="item">
                                 <img src={meter2} alt="Image" />
-                                <h5>React - Beginner </h5>
+                                <h5>BOT Development</h5>
                             </div>
                             <div className="item">
                                 <img src={meter3} alt="Image" />
-                                <h5>C++ - Beginner </h5>
+                                <h5>Programming</h5>
                             </div>
                             {/* <div className="item">
                                 <img src={meter1} alt="Image" />

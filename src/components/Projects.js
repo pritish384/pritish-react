@@ -8,50 +8,52 @@ import projImg5 from "../assets/img/proj5.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import React from 'react';
+
 
 export const Projects = () => {
 
-  const projects = [
+  const games = [
+
     {
-      title: "Simon Game",
-      description: "An Amazing Game 2D",
+      title: "Stone Paper Scissor Game",
+      description: "A Game Made with Python",
       imgUrl: projImg1,
-      projLink:"https://kanav-chauhan.github.io/Simon-Game/",
-    },
-    {
-      title: "Dice Game",
-      description: "A 2-P Dice Game ",
-      imgUrl: projImg2,
-      projLink:"https://kanav-chauhan.github.io/Dice-Game/",
+      projLink:"https://github.com/pritish384/Rock-paper-scissors-game",
 
     },
-    {
-      title: "A Drum Kit",
-      description: "Press Key Drum Sound",
-      imgUrl: projImg3,
-      projLink:"https://kanav-chauhan.github.io/Drum-Kit/",
 
-    },
-    {
-      title: "Old Portfolio",
-      description: "Basic Portfolio by HTML,CSS,JS",
-      imgUrl: projImg4,
-      projLink:"https://kanav-chauhan.github.io/Portfolio/",
-
-    },
-    {
-      title: "SRM Notes",
-      description: "Website to Aid College Students",
-      imgUrl: projImg5,
-      projLink:"https://srmnotes.live",
-
-    },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg3,
-    // },
+  
+  
   ];
+
+
+  const utility = [
+    {
+      title: "GUI QR Code Generator",
+      description: "An Amazing QR Code Generator",
+      imgUrl: projImg2,
+      projLink:"https://github.com/pritish384/QR-code-generator-gui",
+    },
+
+  
+  
+  ];
+
+  const bot = [
+    {
+      title: "Discord Bot",
+      description: "Coming Soon...",
+      imgUrl: projImg3,
+     
+    },
+
+  
+  
+  ];
+
+
+
 
   return (
     <section className="project" id="projects">
@@ -66,20 +68,20 @@ export const Projects = () => {
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                      <Nav.Link eventKey="first">Game</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                      <Nav.Link eventKey="second">Utility</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                      <Nav.Link eventKey="third">Bot</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
-                          projects.map((project, index) => {
+                          games.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
@@ -91,11 +93,34 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                      <p></p>
+                      <Row>
+                          {
+                            utility.map((project2, index) => {
+                              return (
+                                <ProjectCard
+                                  key={index}
+                                  {...project2}
+                                  />
+                              )
+                            })
+                          }
+                        </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p></p>
+                      <Row>
+                          {
+                            bot.map((project2, index) => {
+                              return (
+                                <ProjectCard
+                                  key={index}
+                                  {...project2}
+                                  />
+                              )
+                            })
+                          }
+                        </Row>
                     </Tab.Pane>
+                    
                   </Tab.Content>
                 </Tab.Container>
               </div>}

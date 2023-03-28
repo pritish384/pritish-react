@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { MailchimpForm } from "./MailchimpForm";
+import React from 'react';
 import logo from "../assets/img/logo.svg";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
@@ -12,19 +12,21 @@ export const Footer = () => {
     <footer className="footer">
       <Container>
         <Row className="align-items-center">
-          <MailchimpForm />
+          <hr></hr>
           <Col size={12} sm={6}>
             <img src={logo} alt="Logo" />
+            <p>
+              “My Hunger for <strong>Knowledge</strong> Never Dies.”
+            </p>
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-            <a href="https://www.linkedin.com/in/kanav-chauhan-7a1a24230/" target="_blank"><img src={navIcon1} alt="" /></a>
-                <a href="https://discord.gg/hMm4NYN7bS"target="_blank"><img src={navIcon2} alt="" /></a>
-                <a href="https://www.instagram.com/handsome_kanav/"target="_blank"><img src={navIcon3} alt="" /></a>
-                <a href="https://twitter.com/kanavchauhan001"target="_blank"><img src={navIcon4} alt="" /></a>
-                <a href="https://github.com/Kanav-Chauhan"target="_blank"><img src={navIcon5} alt="" /></a>
+                <a href="https://www.instagram.com/pritish_384/"target="_blank"><img src={navIcon3} alt="" /></a>
+                <a href="https://twitter.com/pritish_purav"target="_blank"><img src={navIcon4} alt="" /></a>
+                <a href="https://github.com/pritish384"target="_blank"><img src={navIcon5} alt="" /></a>
             </div>
-            <p>Copyright 2022. All Rights Reserved</p>
+            <p>Copyright 2023. All Rights Reserved</p>
+            <p>Made with ❤️ by Pritish Purav.</p>
           </Col>
         </Row>
       </Container>
