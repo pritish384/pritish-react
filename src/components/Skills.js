@@ -3,8 +3,8 @@ import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
+// import arrow1 from "../assets/img/arrow1.svg";
+// import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
 import React from 'react';
 
@@ -40,15 +40,19 @@ export const Skills = () => {
                         <p>Learning is a Great process of becoming more Expert with the experience that come as a reward, my passion of learning about the latest and the in-demand Technology made me master in these skills.<br></br></p>
                         <Carousel responsive={responsive} infinite={false} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <input type="image" img src = {meter1} alt="photo" />
+                                {/* <img src={meter1} /> */}
                                 <h5>Web Development</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
+                                <input type="image" img src = {meter2} alt="photo" />
+
+                                {/* <img src={meter2}  /> */}
                                 <h5>BOT Development</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
+                                <input type="image" img src = {meter3} alt="photo" />
+                                {/* <img src={meter3} /> */}
                                 <h5>Programming</h5>
                             </div>
                             {/* <div className="item">
@@ -60,7 +64,9 @@ export const Skills = () => {
                 </div>
             </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+        {/* <img className="background-image-left" src={colorSharp}/> */}
+        <input type="image" className="background-image-left" img src = {colorSharp} alt="photo" />
+
     </section>
   )
 }

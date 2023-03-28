@@ -3,8 +3,8 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/proj1.png";
 import projImg2 from "../assets/img/proj2.png";
 import projImg3 from "../assets/img/proj3.png";
-import projImg4 from "../assets/img/proj4.png";
-import projImg5 from "../assets/img/proj5.png";
+// import projImg4 from "../assets/img/proj4.png";
+// import projImg5 from "../assets/img/proj5.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -128,7 +128,8 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      {/* <img className="background-image-right" src={colorSharp2} alt="photo"></img> */}
+      <input className="background-image-right" type="image" img src = {colorSharp2} alt="photo" />
     </section>
   )
 }
