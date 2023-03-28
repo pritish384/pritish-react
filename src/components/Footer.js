@@ -26,7 +26,7 @@ export const Footer = () => {
                 <a href="https://github.com/pritish384"target="_blank" rel="noopener noreferrer"><img src={navIcon5} alt="" /></a>
             </div>
             <p>Copyright 2023. All Rights Reserved</p>
-            <p><span role="img" aria-label="Made with">❤️</span>by Pritish Purav</p>
+            <p>Made with<span role="img" aria-label="">❤️</span>by Pritish Purav</p>
 
           </Col>
         </Row>
